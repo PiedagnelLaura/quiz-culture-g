@@ -9,7 +9,7 @@ const app = {
 
     // Récupérer la première question et la stocker dans une variable
     const question = questions[numQuestion];
-
+    document.querySelector('input').focus();
     const newQuestionElmt = document.querySelector('#titreQuestion');
     document.querySelector('#numero').textContent=numQuestion;
     newQuestionElmt.textContent=question;
